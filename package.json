@@ -1,0 +1,29 @@
+{
+  "name": "pratique20",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Briskinho/lp-little-miss-sunshine#readme",
+  "bugs": {
+    "url": "https://github.com/Briskinho/lp-little-miss-sunshine/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Briskinho/lp-little-miss-sunshine.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.103.1"
+  }
+}
