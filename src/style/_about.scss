@@ -3,9 +3,8 @@
 .about {
     background-color: variaveis.$corDeFundo;
     color: variaveis.$corDeFundoSecundario;
-    padding: 64px 0;
     
-    &__section {
+    &__container {
         max-width: 1024px;
         margin: 0 auto;
 
@@ -20,12 +19,6 @@
             &__text {
                 text-align: center;
                 padding: 0 24px;
-                
-                h2 {
-                    font-size: 32px;
-                    margin-bottom: 24px;
-                    color: variaveis.$destaques;
-                }
                 
                 p {
                     font-size: 16px;

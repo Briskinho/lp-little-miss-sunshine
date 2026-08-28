@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'about';
+@use 'watch';
 
 * {
     margin: 0;
@@ -12,4 +13,14 @@
 
 body {
     color: variaveis.$corDoTextoPrincipal;
+}
+
+section {
+    padding: 64px 0;
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+        color: variaveis.$destaques;
+    }
 }
