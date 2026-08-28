@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 768px) {
+        background-image: url(../images/hero_mobile_sunshine.jpg);
+    }
+
     &__container {
         max-width: 480px;
         
@@ -17,6 +21,10 @@
             display: flex;
             justify-content: end;
             margin-top: 24px;
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
 
             &__item {
                 width: calc(40% - 8px);
@@ -48,6 +56,10 @@
 
 
         &__contant {
+
+            @media (max-width: 768px) {
+                margin-top: 84px;
+            }
             .title {
                 font-size: 38px;
                 font-weight: lighter;
@@ -70,6 +82,10 @@
             p {
                 text-align: right;
                 margin-top: 24px;
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
             }
 
         }

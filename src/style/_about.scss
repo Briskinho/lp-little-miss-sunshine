@@ -14,11 +14,21 @@
             grid-template-columns: 1.1fr 0.8fr;
             gap: 32px;
             align-items: center;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
             
             
             &__text {
                 text-align: center;
                 padding: 0 24px;
+
+                .container__title {
+                    @media (max-width: 768px) {
+                        font-size: 28px;
+                    }
+                }
                 
                 p {
                     font-size: 16px;
