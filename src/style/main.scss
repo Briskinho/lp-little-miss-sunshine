@@ -12,6 +12,10 @@
     font-family: Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: variaveis.$corDoTextoPrincipal;
 }
