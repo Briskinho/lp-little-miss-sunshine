@@ -1,0 +1,18 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$corDeFundo;
+    color: #adadad;
+
+    &__container {
+        padding: 24px;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
