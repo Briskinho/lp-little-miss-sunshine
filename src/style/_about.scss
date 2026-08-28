@@ -1,0 +1,71 @@
+@use 'variaveis';
+
+.about {
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corDeFundoSecundario;
+    padding: 64px 0;
+    
+    &__section {
+        max-width: 1024px;
+        margin: 0 auto;
+
+        
+        &__movie {
+            display: grid;
+            grid-template-columns: 1.1fr 0.8fr;
+            gap: 32px;
+            align-items: center;
+            
+            
+            &__text {
+                text-align: center;
+                padding: 0 24px;
+                
+                h2 {
+                    font-size: 32px;
+                    margin-bottom: 24px;
+                    color: variaveis.$destaques;
+                }
+                
+                p {
+                    font-size: 16px;
+                }
+
+                p:last-child {
+                    margin-top: 18px;
+                }
+            }
+
+            &__list {
+                .about__list{
+                    list-style: none;
+                    background-color: #222222;
+                    border: 1px solid variaveis.$destaques;
+                    border-radius: 8px;
+
+                    &__item {
+                        display: flex;
+                        padding: 14px 18px;
+                        border-bottom: 1px solid variaveis.$destaques;
+
+                        span {
+                            min-width: 120px;
+                            color: #adadad;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__img {
+            max-width: 1024px;
+            width: 100%;
+            margin-top: 24px;
+
+            img {
+                max-width: 100%;
+                border-radius: 16px;
+            }
+        }
+    }
+}

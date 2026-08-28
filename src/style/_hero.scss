@@ -1,0 +1,77 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vh;
+    min-height: 100vh;
+    background-image: url(../images/hero_sunshine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        max-width: 480px;
+        
+        &__btn {
+            display: flex;
+            justify-content: end;
+            margin-top: 24px;
+
+            &__item {
+                width: calc(40% - 8px);
+                margin-left: 8px;
+
+                .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 40px;
+                    font-size: 18px;
+                    color: variaveis.$corDoTextoPrincipal;
+                    background-color: variaveis.$destaques;
+                    border-radius: 8px;
+                    border: none;
+                    text-decoration: none;
+                    padding: 8px 14px;
+                    border: 1px solid variaveis.$corDeFundo;
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        background-color: variaveis.$corDeFundoSecundario;
+                    }
+                }
+            }
+        }
+
+
+        &__contant {
+            .title {
+                font-size: 38px;
+                font-weight: lighter;
+                line-height: .8;
+                text-transform: uppercase;
+                text-align: right;
+
+            }
+
+            .title-medium {
+                font-size: 54px;
+                font-weight: normal;
+            }
+
+            .title-big {
+                font-size: 74px;
+                font-weight: normal;
+            }
+            
+            p {
+                text-align: right;
+                margin-top: 24px;
+            }
+
+        }
+    }
+}
